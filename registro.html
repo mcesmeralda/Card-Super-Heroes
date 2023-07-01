@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Super-Heroes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <section class="header-container">
+        <p class="aviso">Descuentos 20%</p>
+</header>
+
+<body>
+    <section class="container-hero">
+      
+      <div class="imagen-logo">    
+        <H3 class="hero">Nombre Tienda</H3>
+        <img src="img/Logo (2).png" alt=""> 
+        
+      </div>
+      <h3 class="texto">Nombre Tienda</h3>
+    </section>
+    <div class="header-links">
+        <ul>
+            <a href="/contacto.html"><li>Contacto</li></a>
+            <a href="/registro.html"><li>Registrarme</li></a>
+            <a href="/ingresar.html"><li>Ingresar</li></a>
+        </ul>
+    </div>
+         
+    <main>
+
+          
+      <a href="index.html">
+        <button class="boton2">   
+            +       
+        </button>
+    </a>
+      <section class="form-registre">
+        <h3 class="titulo">Añadí tu super!</h3>
+            <legend>Agregá tu personaje favorito completando las opciones.</legend>
+        <form action="registro.html">
+       
+          
+            
+            <div class="user-details">
+              <!-- Input text con mínimo y máximo con oninvalid="setCustomValidity('Por favor, completar correctamente')"-->
+      
+              <div class="input-box">
+                <label for="nombre">*Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" minlength="5" maxlength="30"
+                  oninvalid="setCustomValidity()">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+                <textarea name="comentarios" id="comentarios" cols="20" placeholder="Descripción" rows="25"></textarea>
+              </div>
+              <div class="input-box2">
+                <label for="especie">*Especie</label>
+                <select name="especie" id="especie">
+                  <optgroup label="Especie"></optgroup>
+                  <option value="Especie">Experimento</option>
+                  <option value="Alien">Alien</option>
+                  <option value="Humano">Humano</option>
+                  <option value="Humano">Triton</option>
+                  </optgroup>
+                </select>
+                <label for="foto">Agregar Foto</label><br>
+                <input type="file" name="foto" id="foto" accept=".jpeg" multiple="">
+      
+                <p class="tipo-p">Poderes</p>
+                <label for="volar" class="tipo">
+                  <input type="checkbox" name="powers" id="volar" value="volar" class="powers">
+                  Volar
+              </label>
+              <label for="super-inte" class="tipo">
+                <input type="checkbox" name="powers" id="super-inte" value="super-inte" class="powers">
+                Super Inteligencia
+            </label>
+            <label for="vista" class="tipo">
+              <input type="checkbox" name="powers" id="vista" value="vista" class="powers">
+              Vista de rayo láser
+          </label>
+          <label for="billetera" class="tipo">
+            <input type="checkbox" name="powers" id="billetera" value="billetera" class="powers">
+            Billetera gorda
+        </label>
+                <hr>
+                <p class="tipo-p">Tipo de personaje</p>
+                <label for="tipo" class="h-v">
+                  <input type="radio" name="tipo" id="tipo" value="tipo">
+                  Héroe / Heroina
+                </label>
+                <label for="tipo" class="h-v">
+                  <input type="radio" name="tipo" id="tipo" value="tipo">
+                  Villano / Villana
+                </label>  
+              </div>
+              
+            </div>
+            <div class="boton-container">
+              <button type="submit" class="boton-enviar">Añadir</button>
+            </div>
+        </form>
+       
+      </section>
+      </main>
+    <footer>
+        <div class="footer-page">
+            <p class="footer-p">Todos los derechos reservados a FRONT END 1 </p>    
+            <h2 class="logo">GitHub</h2>
+        </div>
+    </footer>
+
+</body>
+
+</html>
